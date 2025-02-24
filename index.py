@@ -121,4 +121,4 @@ if uploaded_files:
 
 
 # Thank you message
-st.markdown('<a href="https://www.google.com" target="_blank">Visit Google</a>', unsafe_allow_html=True)
+st.success("🎉 Thank you for using Data Sweeper. Please give us a ⭐ on [GitHub](https://github.com/your-repo) if you liked it.")
