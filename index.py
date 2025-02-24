@@ -121,4 +121,4 @@ if uploaded_files:
 
 
 # Thank you message
-st.success("🎉 Thank you for using Data Sweeper. Please give us a ⭐ on [GitHub](https://github.com/your-repo) if you liked it.")
+st.success("🎉 Thank you for using Data Sweeper. Please give us a ⭐ on [GitHub](https://github.com/Palwasha-48) if you liked it.")
