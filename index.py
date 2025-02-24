@@ -1,3 +1,10 @@
+# Ensure xlsxwriter is installed
+try:
+    import xlsxwriter
+except ImportError:
+    import sys
+    sys.exit("❌ Missing dependency: xlsxwriter. Install it using 'pip install xlsxwriter'.")
+
 # Imports
 import streamlit as st
 import numpy as np
@@ -5,14 +12,10 @@ import pandas as pd
 import os
 from io import BytesIO
 
-# Ensure xlsxwriter is installed
-try:
-    import xlsxwriter
-except ImportError:
-    st.error("❌ Missing dependency: xlsxwriter. Install it using 'pip install xlsxwriter'.")
-
-# Setup section
+# ✅ Set page config at the very top
 st.set_page_config(page_title="Data Sweeper", layout="wide")
+
+# App title and description
 st.title("Data Sweeper")
 st.write("This is a simple tool to help you clean your data. Upload your data and start cleaning it.")
 
